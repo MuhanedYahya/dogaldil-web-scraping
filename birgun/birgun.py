@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 
 # قائمة الأرقام التي تمثل الصفحات التي تريد زيارتها2691  
-page_numbers = range(293,1300)
+page_numbers = range(628,1300)
 
 # الجزء الثابت من عنوان الصفحة
 base_url = "https://www.birgun.net/kategori/kultur-sanat-11?p="
@@ -50,7 +50,7 @@ for page_number in page_numbers:
 
                 if resz_div:
                     # افتح ملف CSV للكتابة
-                    with open("birgun2.csv", "a", encoding="utf-8", newline="") as csvfile:
+                    with open("birgun10.csv", "a", encoding="utf-8", newline="") as csvfile:
                         # كتابة العنوان إلى الملف
                         csvfile.write(page_title + "\n")
                         
